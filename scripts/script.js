@@ -143,15 +143,13 @@ function populateList(myShoppingList){
         newli.textContent = item;
         // append the new li under ul
         ulElement.appendChild(newli);
-    }
+    };
 
-}
+};
 
 let ShoppingList = ["bread", "cheese", "green pepper"];
 
 populateList(ShoppingList);
-
-
 
 
 
@@ -171,16 +169,33 @@ function squareList(){
     ulElement.classList.add("squareList");
 
 }
-
-
 squareList();
 
-function updateImage(){
 
-    const image = document.querySelector("#shoppingCart")
+
+function updateImage() {
+
+    const image = document.querySelector("#shoppingCart");
     image.setAttribute(
-    "src","https://cdn-icons-png.flaticon.com/512/263/263142.png")
-
+    "src", "https://cdn-icons-png.flaticon.com/512/263/263142.png");
+    image.setAttribute("alt","shopping cart");
+    image.setAttribute("width",50);
+    image.setAttribute("height",50);
 };
+updateImage();
 
-image.setAttribute
+
+
+
+function changeListGreen()
+{
+
+// 1.find all li
+
+
+// 2.Loop through all lis
+    // 3. get textContent of each li and check if it .includes() is true 
+        // 4. update the color to green(class, .style.color)
+
+}
+changeListGreen();
